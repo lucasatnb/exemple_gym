@@ -1,14 +1,14 @@
 /* ==========================================================================
-   Design System - Tema Dark & Orange (Alta Performance)
+   Design System - Dark & Orange Theme (High Performance)
    ========================================================================== */
 :root {
-  /* Cores base */
-  --cor-primaria: #FF5722; /* Laranja vibrante */
-  --cor-secundaria: #FF8C00; /* Laranja claro */
+  /* Base colours */
+  --cor-primaria: #FF5722; /* Vibrant orange */
+  --cor-secundaria: #FF8C00; /* Light orange */
   --cor-destaque: #E64A19;
-  --cor-fundo: #121212; /* Fundo principal escuro */
-  --cor-suave: #1E1E1E; /* Fundo de seções e cards */
-  --cor-texto: #F5F5F5; /* Texto claro */
+  --cor-fundo: #121212; /* Main dark background */
+  --cor-suave: #1E1E1E; /* Section and card background */
+  --cor-texto: #F5F5F5; /* Light text */
   --cor-borda: #333333;
   --cor-branco: #FFFFFF;
 
@@ -21,7 +21,7 @@
   --raio-grande: 1.6rem;
   --sombra: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   --transicao: 200ms ease;
-  --tinta-suave: #A0A0A0; /* Texto secundário */
+  --tinta-suave: #A0A0A0; /* Secondary text */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -84,7 +84,7 @@ a:hover { color: var(--cor-secundaria); }
 }
 .pular:focus { transform: translateY(0); }
 
-/* Utilitários */
+/* Utilities */
 .rotulo {
   display: block; margin-bottom: 0.75rem;
   font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em;
@@ -95,7 +95,7 @@ a:hover { color: var(--cor-secundaria); }
 .fundo-primaria { background: #1A1A1A; border-top: 1px solid var(--cor-borda); border-bottom: 1px solid var(--cor-borda); }
 .fundo-primaria .rotulo { color: var(--cor-primaria); }
 
-/* Botões */
+/* Buttons */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   min-height: 3rem; padding: 0.8rem 1.5rem;
@@ -179,18 +179,18 @@ a:hover { color: var(--cor-secundaria); }
 .hero__midia { margin: 0; border-radius: var(--raio-grande); overflow: hidden; box-shadow: var(--sombra); aspect-ratio: 4/3; border: 1px solid var(--cor-borda); }
 .hero__midia img { width: 100%; height: 100%; object-fit: cover; }
 
-/* Seções */
+/* Sections */
 .secao { padding-block: clamp(3rem, 8vw, 6rem); }
 .secao--compacta { padding-block: 2rem; }
 .secao__cabecalho { max-width: 40rem; margin-bottom: 2.5rem; }
 .secao__intro { color: var(--tinta-suave); font-size: 1.1rem; }
 
-/* Números / Prova Social */
+/* Numbers / Social Proof */
 .grade--numeros { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; text-align: center; }
 .numero__valor { display: block; font-family: var(--fonte-titulos); font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: var(--cor-primaria); line-height: 1; }
 .numero__rotulo { display: block; font-size: 0.9rem; color: var(--tinta-suave); margin-top: 0.5rem; }
 
-/* Programas / Produtos */
+/* Programs / Products */
 .grade--produtos { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
 .produto {
   display: flex; flex-direction: column; overflow: hidden;
@@ -214,14 +214,14 @@ a:hover { color: var(--cor-secundaria); }
 .produto__features li::before { content: "•"; position: absolute; left: 0; color: var(--cor-primaria); font-weight: bold; }
 .produto .btn { margin-top: auto; }
 
-/* Galeria */
+/* Gallery */
 .galeria--mosaico { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .galeria__item { border-radius: var(--raio); overflow: hidden; aspect-ratio: 1/1; border: 1px solid var(--cor-borda); }
 .galeria__item:nth-child(1) { grid-column: span 2; aspect-ratio: 16/9; }
 .galeria__item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
 .galeria__item:hover img { transform: scale(1.05); }
 
-/* Equipe */
+/* Team */
 .grade--equipe { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
 .membro { text-align: center; }
 .membro__foto {
@@ -242,7 +242,7 @@ a:hover { color: var(--cor-secundaria); }
 .membro__cargo { color: var(--cor-primaria); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.25rem; }
 .membro__bio { margin: 0; font-size: 0.9rem; color: var(--tinta-suave); line-height: 1.5; }
 
-/* Depoimentos */
+/* Testimonials */
 .grade--depoimentos { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
 .depoimento {
   background: var(--cor-suave); padding: 1.5rem; border-radius: var(--raio);
@@ -264,7 +264,7 @@ a:hover { color: var(--cor-secundaria); }
 .faq__item[open] .faq__pergunta::after { content: "−"; }
 .faq__resposta { padding: 0 1.2rem 1.2rem; color: var(--tinta-suave); }
 
-/* Contato */
+/* Contact */
 .contato--completo { display: grid; gap: 3rem; }
 .contato__texto { max-width: 38rem; }
 .contato__texto > p { color: var(--tinta-suave); }
@@ -285,7 +285,7 @@ a:hover { color: var(--cor-secundaria); }
 .rodape__links a { color: inherit; text-decoration: none; transition: color var(--transicao); }
 .rodape__links a:hover { color: var(--cor-primaria); }
 
-/* Animações */
+/* Animations */
 .js [data-revelar] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .js [data-revelar].visivel { opacity: 1; transform: none; }
 
